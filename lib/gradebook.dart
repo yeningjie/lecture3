@@ -1,7 +1,8 @@
 import 'student.dart';
+import 'logger.dart';
 
-/// GradeBook 类：管理一组学生成绩
-class GradeBook {
+/// GradeBook 类：管理一组学生成绩，混入 Logger 日志能力
+class GradeBook with Logger {
   final List<Student> _students;
 
   /// 构造时接收学生列表

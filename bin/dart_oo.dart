@@ -12,6 +12,7 @@ void main(List<String> arguments) {
   ];
 
   final gradebook = GradeBook(students);
+  gradebook.log('成绩册已创建，共 ${students.length} 名学生');
 
   print('=== 1. 学生列表 ===');
   for (final s in gradebook.students) {
